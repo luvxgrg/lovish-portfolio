@@ -13,19 +13,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lovish Garg | Software Developer",
+  title: {
+    default: "Lovish Garg | Developer & ASCE",
+    template: "%s | Lovish Garg",
+  },
 
   description:
-    "Portfolio of Lovish Garg, a software developer focused on modern web development, artificial intelligence, and building practical digital products.",
+    "Portfolio of Lovish Garg, a software developer and digital marketer behind ASCE, building modern websites, web applications, digital products and online experiences.",
 
   keywords: [
     "Lovish Garg",
+    "ASCE",
     "Software Developer",
     "Web Developer",
     "Frontend Developer",
-    "React Developer",
     "Next.js Developer",
-    "Python Developer",
+    "React Developer",
+    "Digital Marketer",
+    "Web Development",
+    "Website Development",
+    "E-commerce Development",
+    "Landing Page Development",
     "Artificial Intelligence",
   ],
 
@@ -34,15 +42,45 @@ export const metadata: Metadata = {
       name: "Lovish Garg",
     },
   ],
+
+  creator: "Lovish Garg",
+  publisher: "ASCE",
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    title: "Lovish Garg | Developer behind ASCE",
+    description:
+      "Modern websites, digital products and online experiences built through ASCE.",
+    type: "website",
+    locale: "en_IN",
+    siteName: "Lovish Garg | ASCE",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Lovish Garg | Developer behind ASCE",
+    description:
+      "Modern websites, digital products and online experiences built through ASCE.",
+  },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+      </body>
     </html>
   );
 }

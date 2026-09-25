@@ -1,4 +1,31 @@
 export default function Experience() {
+  const experiences = [
+    {
+      role: "Founder",
+      company: "Virtuoso",
+      description:
+        "Founded and developed the concept for a gamified ranking platform built around performance, competition and meaningful rewards. Led product planning and engaged with university stakeholders regarding potential implementation.",
+    },
+    {
+      role: "Freelance Social Media Manager",
+      company: "Independent",
+      description:
+        "Worked with clients on social media strategy, content and audience growth, including helping grow a client page from approximately 3K to 70K followers.",
+    },
+    {
+      role: "Marketing Manager",
+      company: "Rapid Roots",
+      description:
+        "Worked across digital marketing and growth initiatives, supporting campaigns, content strategy and audience development.",
+    },
+    {
+      role: "Independent Developer",
+      company: "Software & AI",
+      description:
+        "Built web applications and interface projects while independently exploring large language models, tokenization, text preprocessing and AI development workflows.",
+    },
+  ];
+
   return (
     <section
       id="experience"
@@ -18,79 +45,46 @@ export default function Experience() {
 
           <p className="mt-6 max-w-sm leading-7 text-zinc-500">
             Experience across product development, entrepreneurship,
-            technology and digital growth.
+            software and digital growth.
           </p>
+
+          {/* RESUME */}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-zinc-300 transition hover:text-white"
+          >
+            View résumé ↗
+          </a>
         </div>
 
         {/* RIGHT */}
         <div className="divide-y divide-zinc-800">
+          {experiences.map((experience) => (
+            <div
+              key={`${experience.role}-${experience.company}`}
+              className="grid gap-5 py-10 first:pt-0 md:grid-cols-[1fr_2fr]"
+            >
+              <div>
+                <p className="font-medium text-white">
+                  {experience.role}
+                </p>
 
-          {/* EXPERIENCE 01 */}
-          <div className="grid gap-5 py-10 first:pt-0 md:grid-cols-[1fr_2fr]">
-            <div>
-              <p className="font-medium text-white">
-                Founder
-              </p>
+                <p className="mt-1 text-sm text-zinc-500">
+                  {experience.company}
+                </p>
+              </div>
 
-              <p className="mt-1 text-sm text-zinc-500">
-                Virtuoso
-              </p>
+              <div>
+                <p className="leading-7 text-zinc-400">
+                  {experience.description}
+                </p>
+              </div>
             </div>
-
-            <div>
-              <p className="leading-7 text-zinc-400">
-                Founded and architected a gamified platform designed around
-                performance, competition and meaningful rewards. Led the
-                product concept and engaged with university stakeholders
-                regarding implementation and rollout.
-              </p>
-            </div>
-          </div>
-
-          {/* EXPERIENCE 02 */}
-          <div className="grid gap-5 py-10 md:grid-cols-[1fr_2fr]">
-            <div>
-              <p className="font-medium text-white">
-                Marketing Manager
-              </p>
-
-              <p className="mt-1 text-sm text-zinc-500">
-                Rapid Roots
-              </p>
-            </div>
-
-            <div>
-              <p className="leading-7 text-zinc-400">
-                Worked across digital marketing and growth initiatives,
-                coordinating campaigns, content strategy and audience
-                development.
-              </p>
-            </div>
-          </div>
-
-          {/* EXPERIENCE 03 */}
-          <div className="grid gap-5 py-10 md:grid-cols-[1fr_2fr]">
-            <div>
-              <p className="font-medium text-white">
-                Independent Developer
-              </p>
-
-              <p className="mt-1 text-sm text-zinc-500">
-                Software & AI
-              </p>
-            </div>
-
-            <div>
-              <p className="leading-7 text-zinc-400">
-                Built web applications and real-world interface projects
-                while independently studying large language model
-                architecture, tokenization, preprocessing and model
-                training workflows.
-              </p>
-            </div>
-          </div>
-
+          ))}
         </div>
+
       </div>
     </section>
   );

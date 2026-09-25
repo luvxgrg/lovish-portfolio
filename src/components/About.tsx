@@ -24,17 +24,31 @@ export default function About() {
 
           <div className="mt-10 grid gap-8 text-lg leading-8 text-zinc-400 md:grid-cols-2">
             <p>
-              I&apos;m a Computer Science graduate focused on software
-              development and applied artificial intelligence. I enjoy
-              understanding how systems work and turning that understanding
-              into products people can actually use.
+              I&apos;m Lovish Garg, a Computer Science graduate working
+              across software development, web technologies and applied
+              artificial intelligence. I enjoy taking ideas from early
+              concepts and turning them into practical digital experiences.
             </p>
 
             <p>
-              My experience extends beyond development into product building,
-              entrepreneurship and digital growth. That combination has taught
-              me to think not only about how something is built, but why it
-              should exist and how people will interact with it.
+              My experience also extends into product building,
+              entrepreneurship and digital marketing. I created ASCE as an
+              independent digital studio where I can bring those disciplines
+              together to build websites, digital products and online
+              experiences for businesses and individuals.
+            </p>
+          </div>
+
+          {/* ASCE */}
+          <div className="mt-14 border-l border-zinc-700 pl-6">
+            <p className="mb-2 text-sm uppercase tracking-[0.2em] text-zinc-500">
+              ASCE
+            </p>
+
+            <p className="max-w-2xl text-base leading-7 text-zinc-400">
+              An independent digital studio focused on modern web
+              development, digital experiences and helping ideas establish
+              a stronger presence online.
             </p>
           </div>
         </div>

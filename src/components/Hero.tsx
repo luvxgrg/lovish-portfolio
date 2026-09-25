@@ -3,25 +3,24 @@ export default function Hero() {
     <section className="mx-auto flex min-h-[85vh] max-w-7xl items-center px-6 lg:px-8">
       <div className="max-w-5xl">
 
-        {/* ROLE */}
+        {/* ROLE / STUDIO */}
         <p className="mb-6 text-sm font-medium uppercase tracking-[0.25em] text-zinc-500">
-          Software Developer • Computer Science
+          Lovish Garg • Developer behind ASCE
         </p>
 
         {/* MAIN HEADING */}
         <h1 className="text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
-          I build software
+          I build digital experiences
           <span className="text-zinc-500">
-            {" "}that turns ideas into products.
+            {" "}that help ideas grow.
           </span>
         </h1>
 
         {/* INTRO */}
         <p className="mt-8 max-w-2xl text-lg leading-8 text-zinc-400">
-          I&apos;m Lovish Garg, a Computer Science graduate focused on
-          building modern web applications and exploring artificial
-          intelligence. I enjoy turning ideas into practical,
-          user-focused digital products.
+          I&apos;m Lovish Garg, a software developer and digital marketer
+          building modern websites, web applications and digital experiences
+          through ASCE — my independent digital studio.
         </p>
 
         {/* BUTTONS */}
@@ -37,13 +36,18 @@ export default function Hero() {
             href="#contact"
             className="rounded-full border border-zinc-700 px-6 py-3 text-sm font-medium transition hover:border-zinc-400"
           >
-            Contact me
+            Start a project
           </a>
         </div>
 
-        {/* SOCIAL LINKS */}
-        <div className="mt-12 flex gap-6 text-sm text-zinc-500">
+        {/* AVAILABILITY */}
+        <div className="mt-8 flex items-center gap-2 text-sm text-zinc-500">
+          <span className="h-2 w-2 rounded-full bg-emerald-500" />
+          Available for freelance projects & collaborations
+        </div>
 
+        {/* SOCIAL LINKS */}
+        <div className="mt-8 flex gap-6 text-sm text-zinc-500">
           <a
             href="https://github.com/luvxgrg"
             target="_blank"
@@ -68,8 +72,8 @@ export default function Hero() {
           >
             Email
           </a>
-
         </div>
+
       </div>
     </section>
   );
