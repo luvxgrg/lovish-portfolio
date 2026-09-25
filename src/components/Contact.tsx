@@ -56,15 +56,17 @@ export default function Contact() {
       {/* DIRECT CONTACT */}
       <div className="mt-20 flex flex-wrap gap-x-8 gap-y-3 border-t border-zinc-900 pt-8 text-sm text-zinc-500">
 
+        {/* WHATSAPP */}
         <a
           href="https://wa.me/917681942028"
           target="_blank"
           rel="noopener noreferrer"
           className="transition hover:text-white"
         >
-          WhatsApp ↗
+          WhatsApp <span className="hidden sm:inline">↗</span>
         </a>
 
+        {/* EMAIL */}
         <a
           href="mailto:lovishgarg90412@gmail.com"
           className="transition hover:text-white"
@@ -72,22 +74,24 @@ export default function Contact() {
           Email
         </a>
 
+        {/* LINKEDIN */}
         <a
           href="https://www.linkedin.com/in/lovish-g-3b4362266/"
           target="_blank"
           rel="noopener noreferrer"
           className="transition hover:text-white"
         >
-          LinkedIn ↗
+          LinkedIn <span className="hidden sm:inline">↗</span>
         </a>
 
+        {/* GITHUB */}
         <a
           href="https://github.com/luvxgrg"
           target="_blank"
           rel="noopener noreferrer"
           className="transition hover:text-white"
         >
-          GitHub ↗
+          GitHub <span className="hidden sm:inline">↗</span>
         </a>
 
       </div>
