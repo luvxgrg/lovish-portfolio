@@ -113,7 +113,8 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-sm font-medium text-white transition hover:text-zinc-400"
                     >
-                      {project.linkText} ↗
+                      {project.linkText}
+                      <span className="hidden sm:inline">↗</span>
                     </a>
                   </div>
                 )}

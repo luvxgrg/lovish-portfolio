@@ -55,7 +55,8 @@ export default function Experience() {
             rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-zinc-300 transition hover:text-white"
           >
-            View résumé ↗
+            View résumé
+            <span className="hidden sm:inline">↗</span>
           </a>
         </div>
 

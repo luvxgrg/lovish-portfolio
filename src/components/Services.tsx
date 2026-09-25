@@ -61,7 +61,8 @@ export default function Services() {
                 {service.number}
               </span>
 
-              <span className="text-zinc-600 transition duration-300 group-hover:text-white">
+              {/* Hidden on mobile, visible from sm breakpoint */}
+              <span className="hidden text-zinc-600 transition duration-300 group-hover:text-white sm:inline">
                 ↗
               </span>
             </div>
